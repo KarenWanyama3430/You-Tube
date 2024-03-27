@@ -4,17 +4,15 @@
     tag="a"
     target="_blank"
     :href="props.link"
+    style="width: 80px; "
   >
     <q-item-section
       v-if="props.icon"
       avatar
+      style="display: flex; flex-direction: column; gap: 6px; align-items: center;"
     >
       <q-icon :name="props.icon" />
-    </q-item-section>
-
-    <q-item-section>
-      <q-item-label>{{ props.title }}</q-item-label>
-      <q-item-label caption>{{ props.caption }}</q-item-label>
+      {{ props.title }}
     </q-item-section>
   </q-item>
 </template>
